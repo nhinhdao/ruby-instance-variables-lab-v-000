@@ -1,14 +1,8 @@
-dna = "ATTGC"
-def DNA_strand(dna)
-    #your code here
-    out = ""
-    dna.each_char do|char|
-        out += "T" if char == "A"
-        out += "A" if char == "T"
-        out += "C" if char == "G"
-        out += "G" if char == "C"
+class Dog
+    def name= name
+        @this_dogs_name = name
     end
-    out
+    def name
+        @this_dogs_name
+    end
 end
-
-puts DNA_strand(dna)
